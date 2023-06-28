@@ -1,7 +1,10 @@
 @import url("styles/hearder.css");
 
 :root{
-    --cor-de-fundo: #EBECEE;
+    --cor-de-fundo: #7fbcce;
+    --cor-de-texto: #991e61;
+    --cor-preta: #000000;
+    --cor-branca: #FFFFFF;
 }
 
 body{
@@ -9,5 +12,5 @@ body{
 }
 
 h1{
-    background-color: white;
+    background-color: var(--cor-branca);
 }
