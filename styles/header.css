@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    
+
 }
 
 .container {
@@ -33,21 +33,22 @@
     width: 60vw;
 }
 
-.container__botao:checked~.lista-menu{
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
-.lista-menu__titulo, .lista-menu__item{
+.lista-menu__titulo,
+.lista-menu__item {
     padding: 1em;
     background-color: var(--branco);
 }
 
-.lista-menu__titulo{
+.lista-menu__titulo {
     color: var(--amarelo);
     font-weight: 700;
 }
 
-.lista-menu__link{
+.lista-menu__link {
     background: var(--branco);
     color: var(--roxo);
     text-decoration: none;
@@ -57,48 +58,80 @@
     display: none;
 }
 
-.container__titulo{
+.container__titulo {
     display: none;
     padding-left: 1em;
 }
 
-.opções{
+.opções {
     display: none;
 }
 
-@media screen and (min-width: 1024px){
-    .container__titulo{
-    font-family: var(--fonte-secundaria);
-    font-size: 30px;
-    font-weight: 400;
-    display: block;
+.container__texto {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container__titulo {
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 400;
+        display: block;
     }
-    .container__titulo--negrito{
-    font-weight: 700;
+
+    .container__titulo--negrito {
+        font-weight: 700;
     }
-    .opções{
+
+    .opções {
         display: flex;
     }
-    .opções__item{
+
+    .opções__item {
         padding: 0 1em;
         text-transform: uppercase;
     }
-    .opções__link{
+
+    .opções__link {
         text-decoration: none;
         color: var(--preto);
     }
-    .container__imagem-transparente{
+
+    .container__imagem-transparente {
         display: none;
     }
-    .cabeçalho__menu-hamburguer{
+
+    .cabeçalho__menu-hamburguer {
         display: none;
     }
-    .opções__botão:checked~.lista-menu{
+
+    .opções__botão:checked~.lista-menu {
         display: block;
         width: auto;
     }
-    .opções__botão{
+
+    .opções__botão {
         display: none;
     }
 }
 
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .cabeçalho {
+        padding: 0 2em;
+    }
+
+    .opções {
+        margin: auto;
+    }
+
+    .container__texto {
+        display: block;
+    }
+}
